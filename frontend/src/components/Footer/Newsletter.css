@@ -34,15 +34,27 @@
   text-align: center;
 }
 
-.form-row {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+/* New: Make the form itself a flex container for its children */
+.reservation-form > *:not(.form-title, .form-subtitle, .reserve-btn) {
+  flex-basis: 100%; /* Start as a single column for all children */
 }
 
+/* Use media queries to apply a two-column layout for larger screens */
+@media (min-width: 769px) {
+  .form-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .reservation-form input,
+  .reservation-form textarea {
+    flex: 1 1 calc(50% - 10px); /* Use flex to create the two-column layout */
+  }
+}
+
+/* Styles for all screen sizes */
 .reservation-form input,
 .reservation-form textarea {
-  flex: 1 1 calc(50% - 20px);
   padding: 15px;
   border-radius: 8px;
   border: none;
@@ -51,10 +63,10 @@
   color: #333;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   background: #fff;
+  width: 100%; /* Ensures they take full width on mobile */
 }
 
 .reservation-form textarea {
-  flex: 1 1 100%;
   min-height: 100px;
   resize: none;
 }
@@ -78,6 +90,7 @@
 }
 
 /* Mobile Responsive */
+/* Mobile Responsive */
 @media (max-width: 768px) {
   .reservation-form {
     padding: 25px 15px;  /* less padding on mobile */
@@ -85,12 +98,21 @@
 
   .form-row {
     flex-direction: column;
-    gap: 15px;
+    /* You can remove this gap, as we'll be adding margin to the inputs now. */
+    /* gap: 15px; */
   }
-
+  
   .reservation-form input,
   .reservation-form textarea {
-    flex: 1 1 100%; /* inputs take full width */
+    /* Inputs take full width */
+    flex: 1 1 100%;
+    /* Add a margin-bottom to each input for spacing */
+    margin-bottom: 15px; 
+  }
+  
+  /* Select the last input in the form to remove the extra bottom margin */
+  .reservation-form textarea {
+    margin-bottom: 0;
   }
 
   .reserve-btn {
