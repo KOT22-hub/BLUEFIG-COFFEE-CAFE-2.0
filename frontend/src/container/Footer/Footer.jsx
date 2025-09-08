@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi';
+import { FiFacebook,  FiInstagram } from 'react-icons/fi';
 
 const Footer = () => (
   <footer className="app__footer" id="contact">
