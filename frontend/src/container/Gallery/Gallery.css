@@ -150,3 +150,12 @@
     }
     
 }
+.app__gallery-images_card {
+  min-width: 300px;
+}
+@media screen and (max-width: 650px) {
+  .app__gallery-images_card {
+    min-width: 80%;   /* instead of fixed 300px */
+    height: auto;
+  }
+}
