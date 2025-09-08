@@ -1,4 +1,4 @@
-import images from './images';
+
 // Breakfast
 const breakfast = [
   {
