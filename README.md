@@ -28,7 +28,7 @@ Installation
 
 Clone the repository:
 
-git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)
+git clone https://github.com/KOT22-hub/BLUEFIG-COFFEE-CAFE-2.0.git
 cd your-repository-name
 
 Install dependencies:
