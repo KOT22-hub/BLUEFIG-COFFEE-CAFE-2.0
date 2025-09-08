@@ -21,7 +21,7 @@ const Newsletter = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('frontend/src/netlify/functions/sendEmail.js', {
+      const response = await fetch("/api/sendEmail", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
