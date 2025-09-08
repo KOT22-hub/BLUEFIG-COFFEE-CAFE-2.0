@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterOverlay, Newsletter } from '../../components';
+import {  Newsletter } from '../../components';
 
 const FindUs = () => (
   <div 
