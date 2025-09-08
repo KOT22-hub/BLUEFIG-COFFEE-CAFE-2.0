@@ -1,60 +1,37 @@
-// netlify/functions/sendEmail.js
-const nodemailer = require("nodemailer");
-const dotenv = require("dotenv");
+import nodemailer from "nodemailer";
+import dotenv from "dotenv";
 dotenv.config();
 
-exports.handler = async (event, context) => {
+export default async function handler(req, res) {
+  if (req.method !== "POST") {
+    return res.status(405).send("Method Not Allowed");
+  }
+
   try {
-    if (event.httpMethod !== 'POST') {
-      return { statusCode: 405, body: 'Method Not Allowed' };
-    }
-
-    let body;
-    try {
-      body = JSON.parse(event.body);
-    } catch (parseError) {
-      console.error("Error parsing request body:", parseError);
-      return { statusCode: 400, body: JSON.stringify({ error: 'Invalid JSON in request body' }) };
-    }
-
-    const { name, phone, email, seats, date, time, requests } = body;
+    const { name, phone, email, seats, date, time, requests } = req.body;
 
     if (!name || !email) {
-      return { statusCode: 400, body: JSON.stringify({ error: 'Missing required fields' }) };
+      return res.status(400).json({ error: "Missing required fields" });
     }
 
-    // Nodemailer setup
-    let transporter;
-    try {
-      transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-          user: process.env.EMAIL_USER,
-          pass: process.env.EMAIL_PASS
-        }
-      });
-    } catch (transporterError) {
-      console.error("Error setting up transporter:", transporterError);
-      return { statusCode: 500, body: JSON.stringify({ error: 'Failed to setup email transporter' }) };
-    }
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
+    });
 
-    // Send the email
-    try {
-      await transporter.sendMail({
-        from: email,
-        to: process.env.EMAIL_USER,
-        subject: `Reservation from ${name}`,
-        text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nSeats: ${seats}\nDate: ${date}\nTime: ${time}\nRequests: ${requests}`
-      });
-    } catch (sendError) {
-      console.error("Error sending email:", sendError);
-      return { statusCode: 500, body: JSON.stringify({ error: 'Failed to send email' }) };
-    }
+    await transporter.sendMail({
+      from: email,
+      to: process.env.EMAIL_USER,
+      subject: `Reservation from ${name}`,
+      text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nSeats: ${seats}\nDate: ${date}\nTime: ${time}\nRequests: ${requests}`,
+    });
 
-    return { statusCode: 200, body: JSON.stringify({ message: 'Reservation sent successfully!' }) };
-
+    return res.status(200).json({ message: "Reservation sent successfully!" });
   } catch (error) {
-    console.error("Unexpected error:", error);
-    return { statusCode: 500, body: JSON.stringify({ error: 'Internal Server Error' }) };
+    console.error(error);
+    return res.status(500).json({ error: error.message });
   }
-};
+}
