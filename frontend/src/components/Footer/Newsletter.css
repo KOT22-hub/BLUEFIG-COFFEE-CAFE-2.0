@@ -3,13 +3,14 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 2rem 1rem;
   margin-top: 3rem;
 }
 
 .reservation-form {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8px);
-  padding: 40px;
+  padding: 40px 30px;
   border-radius: 15px;
   max-width: 1000px;
   width: 100%;
@@ -75,10 +76,11 @@
   color: var(--color-golden);
   transform: scale(1.05);
 }
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .reservation-form {
-    padding: 30px 20px;
+    padding: 25px 15px;  /* less padding on mobile */
   }
 
   .form-row {
@@ -88,17 +90,17 @@
 
   .reservation-form input,
   .reservation-form textarea {
-    flex: 1 1 100%; /* full width on mobile */
+    flex: 1 1 100%; /* inputs take full width */
   }
 
   .reserve-btn {
     width: 100%;
     padding: 15px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .form-title {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .form-subtitle {

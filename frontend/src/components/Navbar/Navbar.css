@@ -1,6 +1,6 @@
 /* ---------------- Navbar Container ---------------- */
 .app__navbar {
-  position: sticky;   /* sticky works now */
+    position: fixed;     /* sticky works now */
   top: 0;             /* must have top */
   width: 100%;
   display: flex;
