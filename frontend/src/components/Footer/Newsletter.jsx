@@ -67,12 +67,21 @@ const Newsletter = () => {
 
           <div className="form-row">
             <input name="email" type="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
-            <input name="seats" type="number" placeholder="Seats" value={formData.seats} onChange={handleChange} required />
+            <div className="input-group">
+                <span className="input-label">Seats</span>
+                <input name="seats" type="number" min="1" value={formData.seats} onChange={handleChange} required />
+            </div>
           </div>
 
           <div className="form-row">
-            <input name="date" type="date" value={formData.date} onChange={handleChange} required placeholder='Date' />
-            <input name="time" type="time" value={formData.time} onChange={handleChange} required placeholder='Time'/>
+            <div className="input-group">
+                <span className="input-label">Date</span>
+                <input name="date" type="date" value={formData.date} onChange={handleChange} required />
+            </div>
+            <div className="input-group">
+                <span className="input-label">Time</span>
+                <input name="time" type="time" value={formData.time} onChange={handleChange} required />
+            </div>
           </div>
 
           <textarea name="requests" placeholder="Special Requests" value={formData.requests} onChange={handleChange}></textarea>

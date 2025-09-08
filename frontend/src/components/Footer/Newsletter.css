@@ -129,3 +129,32 @@
     font-size: 14px;
   }
 }
+/* New: Styling for the label groups */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(50% - 20px); /* This maintains the two-column layout */
+    gap: 5px; /* Adds space between the label and the input */
+}
+
+.input-label {
+    font-size: 14px;
+    color: #fff; /* or whatever color you prefer */
+    margin-bottom: 2px;
+}
+
+/* Ensure the inputs inside the group have the same styling */
+.input-group input {
+    flex: 1 1 100%;
+}
+
+/* Fix for mobile responsiveness */
+@media (max-width: 768px) {
+  .input-group {
+    flex: 1 1 100%; /* Make the group take full width on mobile */
+  }
+
+  .input-label {
+    font-size: 12px;
+  }
+}
