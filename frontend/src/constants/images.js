@@ -33,32 +33,30 @@ import imagethree from '../assets/IMG_0609.jpg'
 
 
 
-export default {
-  imageone,imagetwo,imagethree,
+const images = {
+  imageone,
+  imagetwo,
+  imagethree,
   bubbletea,
   milkshake1,
   milkshake2,
   burger,
-  steak
-  ,fruits,
+  steak,
+  fruits,
   chocolatec,
   eggs,
   moose,
-
-
   logo,
   menu,
   overlaybg,
   spoon,
   welcome,
-
-
-
   sign,
   quote,
-
   bluefiglogo,
   redmug,
   mugheart,
   bluevid
 };
+
+export default images;

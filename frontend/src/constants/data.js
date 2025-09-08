@@ -106,5 +106,6 @@ const openSandwiches = [
 ];
 
 
+const menuData = { breakfast, breakfastBowls, croissants, openSandwiches };
 
-export default { breakfast,breakfastBowls,croissants,openSandwiches};
+export default menuData;
