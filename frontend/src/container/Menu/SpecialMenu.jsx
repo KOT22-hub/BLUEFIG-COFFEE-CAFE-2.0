@@ -3,7 +3,7 @@ import './SpecialMenu.css';
 import images from '../../constants/images';
 import data from '../../constants/data';
 import { SubHeading, MenuItem } from '../../components';
-import { Link } from 'react-router-dom';
+
 
 const SpecialMenu = () => (
   <div className='app__specialMenu flex__center section__padding' id='menu'>
