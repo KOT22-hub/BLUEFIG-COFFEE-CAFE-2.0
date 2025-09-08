@@ -12,7 +12,7 @@
 /* Glow effect on hover */
 .headtext__cormorant:hover {
   color: #fff;
-  text-shadow: 
+  text-shadow:
     0 0 5px #DCCA87,
     0 0 10px #DCCA87,
     0 0 20px #DCCA87,
@@ -42,8 +42,6 @@
   color: var(--color-white);
   line-height: 58.5px;
   letter-spacing: 0.04rem;
-  
-
 }
 .app__specialMenu-menu_breakfast ,.app__specialMenu-menu_croissant{
   flex: 1;
@@ -51,11 +49,9 @@
   flex-direction: column;
   color: white;
   font-size: 33px;
-  
-
-
 }
 
+/* Mobile Responsiveness for tablets and phones */
 @media screen and (max-width: 1150px) {
   .app__specialMenu-menu {
     flex-direction: column; /* stack columns vertically */
@@ -74,14 +70,19 @@
     margin: 2rem 0;
     align-items: center;
   }
+
+  /* THE FIX: Make the image inside the container responsive on mobile */
+  .app__specialMenu-menu_img img {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures no extra space below the image */
+  }
 }
 
+/* Mobile Responsiveness for smaller phones */
 @media screen and (max-width: 650px) {
   .app__specialMenu-menu_breakfast,
   .app__specialMenu-menu_croissant {
-
-  
     width: 100%;
   }
-  
-  }
+}
