@@ -17,14 +17,14 @@ export default async function handler(req, res) {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: "munatsi272@gmail.com",
+        pass: "ogdx vvtp nsgr frqr",
       },
     });
 
     await transporter.sendMail({
-      from: email,
-      to: process.env.EMAIL_USER,
+      from: "munatsi272@gmail.com",
+      to: "munatsi272@gmail.com",
       subject: `Reservation from ${name}`,
       text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nSeats: ${seats}\nDate: ${date}\nTime: ${time}\nRequests: ${requests}`,
     });
