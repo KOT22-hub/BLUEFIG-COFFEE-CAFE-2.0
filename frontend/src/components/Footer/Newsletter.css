@@ -1,0 +1,107 @@
+/* Reservation Form Section */
+.reservation-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.reservation-form {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-title {
+  font-size: 28px;
+  color: var(--color-golden);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.form-subtitle {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.reservation-form input,
+.reservation-form textarea {
+  flex: 1 1 calc(50% - 20px);
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.reservation-form textarea {
+  flex: 1 1 100%;
+  min-height: 100px;
+  resize: none;
+}
+
+.reserve-btn {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--color-golden);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reserve-btn:hover {
+  background: #fff;
+  color: var(--color-golden);
+  transform: scale(1.05);
+}
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .reservation-form {
+    padding: 30px 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .reservation-form input,
+  .reservation-form textarea {
+    flex: 1 1 100%; /* full width on mobile */
+  }
+
+  .reserve-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .form-title {
+    font-size: 24px;
+  }
+
+  .form-subtitle {
+    font-size: 14px;
+  }
+}

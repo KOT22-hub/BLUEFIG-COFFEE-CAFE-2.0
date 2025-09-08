@@ -1,0 +1,21 @@
+.app__header{
+    background-color: var(--color-black);
+}
+.app__header-1{
+    color: white;
+    line-height: 110px;
+    font-size: 50px;
+}
+.app__header-1:hover {
+  color: #DCCA87;           /* golden color on hover */
+  transform: scale(1.05) rotate(-1deg); /* subtle zoom + tilt */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5); /* soft glow effect */
+}
+.app__header-img img{
+    width: 80%;
+}
+.custom__button:hover {
+  background-color: black;  /* background turns black */
+  color: #DCCA87;           /* text turns golden */
+  border-color: #DCCA87;    /* keep border golden if you want */
+}

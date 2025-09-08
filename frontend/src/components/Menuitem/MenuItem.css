@@ -1,0 +1,37 @@
+.app__menuitem-sub p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* shortens long text with "..." */
+  max-width: 250px; /* adjust as needed */
+}
+.app__menuitem {
+  margin-bottom: 1.5rem; /* space between menu items */
+}
+
+.app__menuitem-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* spreads title and price */
+  margin-bottom: 0.5rem; /* space between title/price and tags */
+}
+
+.app__menuitem-name p {
+  margin: 0;
+}
+
+.app__menuitem-price p {
+  margin: 0;
+}
+
+.app__menuitem-sub {
+  margin-top: 0.3rem; /* space between head and tags */
+
+}
+.app__menuitem-name{
+  display: flex;
+}
+.custom__button:hover {
+  background-color: black;  /* background turns black */
+  color: #DCCA87;           /* text turns golden */
+  border-color: #DCCA87;    /* keep border golden if you want */
+}

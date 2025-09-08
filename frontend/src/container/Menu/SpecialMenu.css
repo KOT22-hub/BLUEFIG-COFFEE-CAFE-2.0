@@ -1,0 +1,87 @@
+.app__specialMenu{
+    flex-direction: column;
+    background: var(--color-black);
+}
+.headtext__cormorant {
+  color: #DCCA87; /* golden color */
+  font-size: 60px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Glow effect on hover */
+.headtext__cormorant:hover {
+  color: #fff;
+  text-shadow: 
+    0 0 5px #DCCA87,
+    0 0 10px #DCCA87,
+    0 0 20px #DCCA87,
+    0 0 40px #DCCA87;
+  transform: scale(1.05); /* slight zoom */
+}
+.app__specialMenu-title{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.app__specialMenu-menu{
+    width: 60%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.custom__button:hover {
+  background-color: black;  /* background turns black */
+  color: #DCCA87;           /* text turns golden */
+  border-color: #DCCA87;    /* keep border golden if you want */
+}
+.app__specialMenu_menu_heading{
+  font-family: var(--font-base);
+  font-weight: 600;
+  color: var(--color-white);
+  line-height: 58.5px;
+  letter-spacing: 0.04rem;
+  
+
+}
+.app__specialMenu-menu_breakfast ,.app__specialMenu-menu_croissant{
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+  color: white;
+  font-size: 33px;
+  
+
+
+}
+
+@media screen and (max-width: 1150px) {
+  .app__specialMenu-menu {
+    flex-direction: column; /* stack columns vertically */
+    align-items: center;
+    width: 100%;
+  }
+
+  .app__specialMenu-menu_breakfast,
+  .app__specialMenu-menu_croissant {
+    width: 90%; /* fit smaller screen */
+    margin-bottom: 2rem;
+  }
+
+  .app__specialMenu-menu_img {
+    width: 100%;
+    margin: 2rem 0;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__specialMenu-menu_breakfast,
+  .app__specialMenu-menu_croissant {
+
+  
+    width: 100%;
+  }
+  
+  }
