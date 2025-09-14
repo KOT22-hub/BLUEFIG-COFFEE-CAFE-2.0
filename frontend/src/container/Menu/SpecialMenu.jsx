@@ -10,7 +10,7 @@ const SpecialMenu = () => (
     {/* Title */}
     <div className='app__specialMenu-title'>
       <SubHeading title="Where Taste Meets Comfort" />
-      <h1 className='headtext__cormorant'>Savor Our Specials</h1>
+      <h1 className='headtext__cormorant'>Discover our Menu</h1>
     </div>
 
     {/* Menu Sections */}
