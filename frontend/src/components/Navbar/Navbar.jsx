@@ -44,7 +44,6 @@ const Navbar = () => {
       />
      <ul className='app__navbar-links-smallscreen'>
   <li><a href="#home" onClick={() => setToggleMenu(false)}>Home</a></li>
-  <li><a href="#about" onClick={() => setToggleMenu(false)}>About</a></li>
   <li><a href="#menu" onClick={() => setToggleMenu(false)}>Menu</a></li>
   <li><a href="#reservations" onClick={() => setToggleMenu(false)}>Reservations</a></li>
   <li><a href="#contact" onClick={() => setToggleMenu(false)}>Contact</a></li>
