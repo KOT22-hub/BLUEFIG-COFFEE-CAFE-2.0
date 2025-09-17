@@ -29,7 +29,7 @@ const Navbar = () => {
     </div>
    <div className='app__navbar-smallscreen'>
   <GiHamburgerMenu 
-    color='#fff' 
+    color='#000000ff' 
     fontSize={27} 
     onClick={() => setToggleMenu(true)} 
     aria-label="Open menu" 

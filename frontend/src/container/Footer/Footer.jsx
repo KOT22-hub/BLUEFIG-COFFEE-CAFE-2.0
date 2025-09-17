@@ -20,8 +20,8 @@ const Footer = () => (
         <h3>Contact Us</h3>
         <p>Shop 10, Mooikloof Village Centre, Pretoria, 0081</p>
         <p>
-          Deon (061) 552-2806<br />
-          Vicky (082) 491-9244
+            Vicky (082) 491-9244<br />
+          Lesl (064) 681-2280
         </p>
         <p> bluefigmooikloof@gmail.com</p>
       </div>

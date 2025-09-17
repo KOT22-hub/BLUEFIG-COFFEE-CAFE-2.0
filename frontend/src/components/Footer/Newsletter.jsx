@@ -58,7 +58,7 @@ const Newsletter = () => {
       <div className="reservation-section">
         <form className="reservation-form" onSubmit={handleSubmit}>
           <h2 className="form-title">Reserve a Table</h2>
-          <p className="form-subtitle">Book your spot and enjoy an unforgettable dining experience.</p>
+          <p className="form-subtitle">  Planning a special or private event? Whether it’s a birthday, anniversary, or an exclusive gathering, reserve your table and let us make your occasion truly unforgettable..</p>
 
           <div className="form-row">
             <input name="name" type="text" placeholder="Name" value={formData.name} onChange={handleChange} required />
@@ -84,7 +84,7 @@ const Newsletter = () => {
             </div>
           </div>
 
-          <textarea name="requests" placeholder="Special Requests" value={formData.requests} onChange={handleChange}></textarea>
+          <textarea name="requests" placeholder="Any special requests or event info"  value={formData.requests} onChange={handleChange}></textarea>
 
           <button type="submit" className="reserve-btn">Book a Table</button>
         </form>
