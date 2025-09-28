@@ -52,13 +52,14 @@ const SpecialMenu = () => {
 
       {/* View More Button */}
       <div style={{ marginTop: "15px" }}>
-        <button 
-          type='button' 
-          className='custom__button'
-     
-        >
-          View More
-        </button>
+       <a
+  href="https://moonlit-faloodeh-4a6648.netlify.app"
+  className="custom__button"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  View More
+</a>
       </div>
 
 
