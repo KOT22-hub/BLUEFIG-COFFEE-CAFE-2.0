@@ -37,7 +37,17 @@ const Footer = () => (
             <FiInstagram />
           </a>
         </div>
-        <p>Also find us on Uber Eats!</p>
+      <p>
+  Also find us on <a 
+    href="https://www.ubereats.com/za/store/blue-fig-coffee-cafe-mooikloof/DEwwfRYgWlqXCpFU9WmPpQ?srsltid=AfmBOorSjYZHvD8jTcbOdrC35CtM2Hb7i2a5QpZe0oJ8XQwxIykaS-c9" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    style="color: #00a650; text-decoration: underline;"
+  >
+    Uber Eats
+  </a>!
+</p>
+
       </div>
     </div>
 
