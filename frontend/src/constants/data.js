@@ -183,12 +183,24 @@ const toastedSandwiches = [
     tags: 'The ultimate café classic — ham, melted cheese and fresh tomato in a warm toasted sandwich. Served with chips or a crisp side salad',
   },
 ];
+const wraps = [
+  {
+    title: 'Chicken',
+    price: 'R108',
+    tags: 'Crispy chicken strips, fresh lettuce, tomato, avo and cucumber, wrapped and finished with a creamy homemade mayonnaise. Served with chips or a side salad',
+  },
+  {
+    title: 'Meaty',
+    price: 'R122',
+    tags: 'Juicy rump steak strips with fresh lettuce, tomato, cucumber and red onion, wrapped and drizzled with homemade mayonnaise. Served with chips or a side salad',
+  },
+];
 
 
 
 
 
 
-const menuData = { breakfast, breakfastBowls, croissants, openSandwiches,quiches,scones,salads,toastedSandwiches };
+const menuData = { breakfast, breakfastBowls, croissants, openSandwiches,quiches,scones,salads,toastedSandwiches,wraps };
 
 export default menuData;

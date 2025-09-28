@@ -34,6 +34,10 @@ const SpecialMenu = () => {
             {data.salads.map((salad, index) => (
               <MenuItem key={salad.title + index} title={salad.title} price={salad.price} tags={salad.tags} />
             ))}
+             <p className='app__specialMenu_menu_sandwiches' style={{marginBottom:"15px",marginTop:"10px"}}>Wraps</p>
+            {data.wraps.map((wrap, index) => (
+              <MenuItem key={wrap.title + index} title={wrap.title} price={wrap.price} tags={wrap.tags} />
+            ))}
 
           </div>
         </div>
