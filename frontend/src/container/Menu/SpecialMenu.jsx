@@ -26,6 +26,15 @@ const SpecialMenu = () => {
             {data.breakfast.map((breakf, index) => (
               <MenuItem key={breakf.title + index} title={breakf.title} price={breakf.price} tags={breakf.tags} />
             ))}
+               <p className='app__specialMenu_menu_sandwiches' style={{marginBottom:"15px",marginTop:"10px"}}>Scones</p>
+            {data.scones.map((scone, index) => (
+              <MenuItem key={scone.title + index} title={scone.title} price={scone.price} tags={scone.tags} />
+            ))}
+             <p className='app__specialMenu_menu_sandwiches' style={{marginBottom:"15px",marginTop:"10px"}}>Salads</p>
+            {data.salads.map((salad, index) => (
+              <MenuItem key={salad.title + index} title={salad.title} price={salad.price} tags={salad.tags} />
+            ))}
+
           </div>
         </div>
 
@@ -46,6 +55,15 @@ const SpecialMenu = () => {
             {data.openSandwiches.map((sandwich, index) => (
               <MenuItem key={sandwich.title + index} title={sandwich.title} price={sandwich.price} tags={sandwich.tags} />
             ))}
+              <p className='app__specialMenu_menu_sandwiches' style={{marginBottom:"15px",marginTop:"10px"}}>Quiches</p>
+            {data.quiches.map((quich, index) => (
+              <MenuItem key={quich.title + index} title={quich.title} price={quich.price} tags={quich.tags} />
+            ))}
+            <p className='app__specialMenu_menu_sandwiches' style={{marginBottom:"15px",marginTop:"10px"}}>Toasted Sandwiches</p>
+            {data.toastedSandwiches.map((toast, index) => (
+              <MenuItem key={toast.title + index} title={toast.title} price={toast.price} tags={toast.tags} />
+            ))}
+            
           </div>
         </div>
       </div>
