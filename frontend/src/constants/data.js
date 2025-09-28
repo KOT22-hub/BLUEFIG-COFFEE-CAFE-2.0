@@ -4,7 +4,7 @@ const breakfast = [
   {
     title: 'All Day Breakfast',
     price: 'R65',
-    tags: 'with grilled tomato',
+    tags: 'One egg, bacon and toasted ciabatta bread, with grilled tomato',
   },
   {
     title: 'Avotoa',
