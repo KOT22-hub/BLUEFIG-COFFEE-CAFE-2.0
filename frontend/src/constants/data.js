@@ -195,12 +195,61 @@ const wraps = [
     tags: 'Juicy rump steak strips with fresh lettuce, tomato, cucumber and red onion, wrapped and drizzled with homemade mayonnaise. Served with chips or a side salad',
   },
 ];
+const bowls = [
+  {
+    title: 'Tropical Twist Bowl',
+    price: 'R89',
+    tags: 'Seasonal fruit, creamy Greek yoghurt and muesli, drizzled with honey (may contain nuts)',
+  },
+  {
+    title: 'Muesli Bowl',
+    price: 'R74',
+    tags: 'Creamy Greek yoghurt and muesli, drizzled with honey (may contain nuts)',
+  },
+  {
+    title: 'Fruity Bowl',
+    price: 'R69',
+    tags: 'Seasonal fruit with creamy Greek yoghurt, drizzled with honey',
+  },
+];
+const pastas = [
+  {
+    title: 'Creamy Chicken Alfredo',
+    price: 'R150',
+    tags: 'Marinated chicken, olives, garlic and cream, served with fettuccine',
+  },
+  {
+    title: 'Spaghetti Bolognese',
+    price: 'R125',
+    tags: 'Beef mince served with spaghetti',
+  },
+];
+
+
+const burgers = [
+  {
+    title: 'Blue Fig Burger',
+    price: 'R125',
+    tags: 'Homemade beef patty, lettuce, tomato, cucumber pickles, onions and sauce. Extras can be added. Served with chips',
+  },
+];
+
+
+const steaks = [
+  {
+    title: '350g T-Bone',
+    price: 'R195',
+    tags: 'Juicy 350g T-bone steak grilled to perfection, served with two eggs and crispy golden chips',
+  },
+  {
+    title: '500g T-Bone',
+    price: 'R255',
+    tags: 'Hearty 500g T-bone steak for big appetites, served with two eggs and crispy golden chips',
+  },
+];
 
 
 
-
-
-
-const menuData = { breakfast, breakfastBowls, croissants, openSandwiches,quiches,scones,salads,toastedSandwiches,wraps };
+const menuData = { breakfast, breakfastBowls, croissants, openSandwiches,quiches,scones,salads,toastedSandwiches,wraps,bowls,pastas,burgers,steaks };
 
 export default menuData;
