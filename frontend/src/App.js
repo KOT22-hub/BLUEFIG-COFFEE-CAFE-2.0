@@ -10,17 +10,20 @@ const App = () => (
     <hr className="section-divider" />
     <Header />
     <hr className="section-divider" />
+    <FindUs />
+            <hr className="section-divider" />
+    <Gallery />
+         <hr className="section-divider" />
+          <Intro />
+       <hr className="section-divider" />
+    
 
     <SpecialMenu />
  
 
-    <Intro />
-       <hr className="section-divider" />
+   
 
-    <Gallery />
-         <hr className="section-divider" />
-    <FindUs />
-            <hr className="section-divider" />
+    
      
     <Footer />  
   </div>
