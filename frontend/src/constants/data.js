@@ -247,9 +247,27 @@ const steaks = [
     tags: 'Hearty 500g T-bone steak for big appetites, served with two eggs and crispy golden chips',
   },
 ];
+const cakes = [
+  {
+    title: 'Chocolate Cake',
+    price: 'R75',
+    tags: 'Rich and moist chocolate cake. Check availability',
+  },
+  {
+    title: 'Carrot Cake',
+    price: 'R75',
+    tags: 'Classic spiced carrot cake with cream cheese frosting. Check availability',
+  },
+  {
+    title: 'Strawberry Cheesecake',
+    price: 'R88',
+    tags: 'Creamy cheesecake topped with fresh strawberry. Check availability',
+  },
+];
 
 
 
-const menuData = { breakfast, breakfastBowls, croissants, openSandwiches,quiches,scones,salads,toastedSandwiches,wraps,bowls,pastas,burgers,steaks };
+
+const menuData = { breakfast, breakfastBowls, croissants, openSandwiches,quiches,scones,salads,toastedSandwiches,wraps,bowls,pastas,burgers,steaks,cakes };
 
 export default menuData;
